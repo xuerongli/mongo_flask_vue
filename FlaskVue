@@ -1,0 +1,12 @@
+步骤：
+Vue.js 实现前端页面 & 通过 axios 库请求后台接口获取数据后重新渲染页面；
+Flask & Flask-CORS 提供接口 & 实现跨域服务。
+打包 Vue.js 文件 & 部署到服务器，通过 index 页面进行访问。
+
+npm install 安装项目依赖
+npm run dev 命令只用做本地调试，供开发者预览页面
+如何将 Vue 项目部署到服务器上呢？
+- 执行命令 npm run build 生成 dist 文件夹，然后将该目录下的文件部署到服务器（服务器如python，tomcat，nginx）。
+- cd 到 dist 目录下，这里使用最简单的 python 搭建服务器，运行命令：python -m http.server，将 dist 下的文件部署到 Python 自带的服务器中；
+如何通过 Vue 请求服务器接口并获取数据呢？
+- 使用 axios 库来实现，安装命令：npm install axios。
